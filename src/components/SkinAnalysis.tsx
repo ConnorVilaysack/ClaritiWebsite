@@ -187,7 +187,7 @@ const slides: Slide[] = [
             <YAxis domain={[0, 100]} tick={{ fontSize: 12, fill: "#94A3B8" }} axisLine={false} tickLine={false} />
             <Tooltip
               contentStyle={{ borderRadius: "12px", border: "1px solid #F1F5F9", fontSize: "13px" }}
-              formatter={(v: number) => [`${v}/100`, "Score"]}
+              formatter={(v) => [`${v}/100`, "Score"]}
             />
             <Area type="monotone" dataKey="score" stroke="#EF4444" strokeWidth={2.5} fill="url(#inflGrad)" dot={{ r: 4, fill: "#EF4444", strokeWidth: 0 }} />
           </AreaChart>
@@ -214,7 +214,7 @@ const slides: Slide[] = [
             <YAxis domain={[0, 100]} tick={{ fontSize: 12, fill: "#94A3B8" }} axisLine={false} tickLine={false} />
             <Tooltip
               contentStyle={{ borderRadius: "12px", border: "1px solid #F1F5F9", fontSize: "13px" }}
-              formatter={(v: number) => [`${v}/100`, "Score"]}
+              formatter={(v) => [`${v}/100`, "Score"]}
             />
             <Area type="monotone" dataKey="score" stroke="#EAB308" strokeWidth={2.5} fill="url(#oilGrad)" dot={{ r: 4, fill: "#EAB308", strokeWidth: 0 }} />
           </AreaChart>
@@ -241,7 +241,7 @@ const slides: Slide[] = [
             <YAxis domain={[0, 100]} tick={{ fontSize: 12, fill: "#94A3B8" }} axisLine={false} tickLine={false} />
             <Tooltip
               contentStyle={{ borderRadius: "12px", border: "1px solid #F1F5F9", fontSize: "13px" }}
-              formatter={(v: number) => [`${v}/100`, "Score"]}
+              formatter={(v) => [`${v}/100`, "Score"]}
             />
             <Area type="monotone" dataKey="score" stroke="#3B82F6" strokeWidth={2.5} fill="url(#hydGrad)" dot={{ r: 4, fill: "#3B82F6", strokeWidth: 0 }} />
           </AreaChart>
@@ -268,7 +268,7 @@ const slides: Slide[] = [
             <YAxis domain={[0, 100]} tick={{ fontSize: 12, fill: "#94A3B8" }} axisLine={false} tickLine={false} />
             <Tooltip
               contentStyle={{ borderRadius: "12px", border: "1px solid #F1F5F9", fontSize: "13px" }}
-              formatter={(v: number) => [`${v}/100`, "Score"]}
+              formatter={(v) => [`${v}/100`, "Score"]}
             />
             <Area type="monotone" dataKey="score" stroke="#8B5CF6" strokeWidth={2.5} fill="url(#texGrad)" dot={{ r: 4, fill: "#8B5CF6", strokeWidth: 0 }} />
           </AreaChart>
@@ -295,7 +295,7 @@ const slides: Slide[] = [
             <YAxis domain={[0, 100]} tick={{ fontSize: 12, fill: "#94A3B8" }} axisLine={false} tickLine={false} />
             <Tooltip
               contentStyle={{ borderRadius: "12px", border: "1px solid #F1F5F9", fontSize: "13px" }}
-              formatter={(v: number) => [`${v}/100`, "Score"]}
+              formatter={(v) => [`${v}/100`, "Score"]}
             />
             <Area type="monotone" dataKey="score" stroke="#22C55E" strokeWidth={2.5} fill="url(#poreGrad)" dot={{ r: 4, fill: "#22C55E", strokeWidth: 0 }} />
           </AreaChart>
