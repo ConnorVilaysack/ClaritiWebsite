@@ -46,7 +46,7 @@ export default function Hero() {
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
             Post a reel using Clariti that gets over 2,000 views and tag{" "}
             <a href="https://www.instagram.com/connor1_vilaysack" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">@connor1_vilaysack</a>{" "}
-            on Instagram — I&apos;ll give you Clariti for free.
+            on Instagram. I&apos;ll give you Clariti for free.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
