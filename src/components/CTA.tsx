@@ -39,7 +39,7 @@ export default function CTA() {
             <span className="w-1 h-1 bg-white/30 rounded-full" />
             <span>Private &amp; secure</span>
             <span className="w-1 h-1 bg-white/30 rounded-full" />
-            <span>Private & secure</span>
+            <span>iOS available now</span>
           </div>
         </FadeIn>
       </div>

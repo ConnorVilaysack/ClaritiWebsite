@@ -15,11 +15,7 @@ const faqs = [
   },
   {
     q: "What's included?",
-    a: "Clariti includes unlimited photo scans, a photo gallery, progress graphs, a skin calendar, and routine tracking. Everything you need to start understanding your skin.",
-  },
-  {
-    q: "What does Pro include?",
-    a: "Pro adds the Clariti AI chat assistant, detailed skin health reports, acne trend analysis, UV index alerts, advanced personalized insights, and priority support — all for just $1.99/month.",
+    a: "Clariti includes everything — unlimited photo scans, a photo gallery, progress graphs, a skin calendar, routine tracking, AI chat assistant, detailed skin health reports, acne trend analysis, UV index alerts, and advanced personalized insights.",
   },
   {
     q: "Is my data private and secure?",

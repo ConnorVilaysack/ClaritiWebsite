@@ -44,8 +44,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10">
-            Snap a photo. Get AI-powered skin analysis. Track your progress and
-            build a routine that actually works — backed by data, not guesswork.
+            Post a reel using Clariti that gets over 2,000 views and tag{" "}
+            <a href="https://www.instagram.com/connor1_vilaysack" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">@connor1_vilaysack</a>{" "}
+            on Instagram — I&apos;ll give you Clariti for free.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
