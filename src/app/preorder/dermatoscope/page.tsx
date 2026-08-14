@@ -15,8 +15,21 @@ export const metadata: Metadata = {
 
 export const dynamic = "force-dynamic";
 
-export default async function DermatoscopePreorderPage() {
+export default async function DermatoscopePreorderPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ email?: string; userId?: string }>;
+}) {
   const inventory = await getPreorderInventory();
+  const params = await searchParams;
+  const checkoutEmail = params.email?.trim();
+  const checkoutUserId = params.userId?.trim().toLowerCase();
 
-  return <DermatoscopePreorder inventory={inventory} />;
+  return (
+    <DermatoscopePreorder
+      inventory={inventory}
+      checkoutEmail={checkoutEmail}
+      checkoutUserId={checkoutUserId}
+    />
+  );
 }

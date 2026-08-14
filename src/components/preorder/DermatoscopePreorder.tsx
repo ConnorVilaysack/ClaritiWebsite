@@ -116,10 +116,14 @@ function ClaritiBackground() {
 
 type DermatoscopePreorderProps = {
   inventory: PreorderInventory;
+  checkoutEmail?: string;
+  checkoutUserId?: string;
 };
 
 export default function DermatoscopePreorder({
   inventory,
+  checkoutEmail,
+  checkoutUserId,
 }: DermatoscopePreorderProps) {
   const savings = getSavingsCents();
   const discount = getDiscountPercent();
@@ -205,6 +209,8 @@ export default function DermatoscopePreorder({
 
                   <PreorderCheckoutButton
                     disabled={inventory.isSoldOut}
+                    email={checkoutEmail}
+                    userId={checkoutUserId}
                     label={
                       inventory.isSoldOut
                         ? "Sold Out"
@@ -496,6 +502,8 @@ export default function DermatoscopePreorder({
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl border border-slate-200/60 p-6 shadow-xl shadow-primary/5 max-w-md mx-auto">
               <PreorderCheckoutButton
                 disabled={inventory.isSoldOut}
+                email={checkoutEmail}
+                userId={checkoutUserId}
                 label={
                   inventory.isSoldOut
                     ? "Sold Out"
@@ -518,7 +526,12 @@ export default function DermatoscopePreorder({
                 {formatUsd(DERMATOSCOPE_PREORDER.msrpCents)}
               </p>
             </div>
-            <PreorderCheckoutButton label="Pre-Order" className="flex-1" />
+            <PreorderCheckoutButton
+              label="Pre-Order"
+              className="flex-1"
+              email={checkoutEmail}
+              userId={checkoutUserId}
+            />
           </div>
         </div>
       )}

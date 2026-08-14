@@ -21,11 +21,15 @@ export async function POST(request: NextRequest) {
     const origin = getSiteOrigin();
     const body = (await request.json().catch(() => ({}))) as {
       email?: string;
+      userId?: string;
     };
+
+    const normalizedUserId = body.userId?.trim().toLowerCase();
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       customer_email: body.email,
+      client_reference_id: normalizedUserId,
       line_items: [
         {
           quantity: 1,
@@ -43,6 +47,8 @@ export async function POST(request: NextRequest) {
       metadata: {
         product: DERMATOSCOPE_PREORDER.productId,
         batch: DERMATOSCOPE_PREORDER.batchId,
+        user_id: normalizedUserId ?? "",
+        grant_premium: "true",
       },
       success_url: `${origin}/preorder/dermatoscope/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/preorder/dermatoscope/cancelled`,
